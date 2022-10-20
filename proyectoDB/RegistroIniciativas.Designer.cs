@@ -1,6 +1,6 @@
 ﻿namespace proyectoDB
 {
-    partial class RgistroIniciativas
+    partial class RegistroIniciativas
     {
         /// <summary>
         /// Required designer variable.

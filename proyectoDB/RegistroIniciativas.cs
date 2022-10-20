@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace proyectoDB
 {
-    public partial class RgistroIniciativas : Form
+    public partial class RegistroIniciativas : Form
     {
-        public RgistroIniciativas()
+        public RegistroIniciativas()
         {
             InitializeComponent();
         }
