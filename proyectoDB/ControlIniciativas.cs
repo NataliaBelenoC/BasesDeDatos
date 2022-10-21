@@ -8,7 +8,7 @@ namespace proyectoDB
 {
     internal class ControlIniciativas
     {
-        public string ctrlRegistro(Iniciativas iniciativa)
+        public string ctrlRegistroIniciativa(Iniciativas iniciativa)
         {
             ModeloIniciativas modeloIniciativas = new ModeloIniciativas();
             string respuesta = "";

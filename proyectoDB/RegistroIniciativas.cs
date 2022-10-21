@@ -35,7 +35,7 @@ namespace proyectoDB
             {
 
                 ControlIniciativas controlIniciativas = new ControlIniciativas();
-                string respuesta = controlIniciativas.ctrlRegistro(iniciativa);
+                string respuesta = controlIniciativas.ctrlRegistroIniciativa(iniciativa);
 
                 if (respuesta.Length > 0)
                 {
@@ -43,7 +43,7 @@ namespace proyectoDB
                 }
                 else
                 {
-                    MessageBox.Show("Usuario registrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Iniciativa registrada", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
