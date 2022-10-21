@@ -52,7 +52,7 @@
             // fjainfisfa
             // 
             this.fjainfisfa.AutoSize = true;
-            this.fjainfisfa.Location = new System.Drawing.Point(72, 71);
+            this.fjainfisfa.Location = new System.Drawing.Point(74, 19);
             this.fjainfisfa.Name = "fjainfisfa";
             this.fjainfisfa.Size = new System.Drawing.Size(54, 15);
             this.fjainfisfa.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(787, 1014);
+            this.button1.Location = new System.Drawing.Point(783, 899);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(237, 35);
             this.button1.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             // txtNombrei
             // 
-            this.txtNombrei.Location = new System.Drawing.Point(201, 63);
+            this.txtNombrei.Location = new System.Drawing.Point(201, 19);
             this.txtNombrei.Name = "txtNombrei";
             this.txtNombrei.Size = new System.Drawing.Size(260, 23);
             this.txtNombrei.TabIndex = 2;
@@ -79,7 +79,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 114);
+            this.label1.Location = new System.Drawing.Point(67, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 15);
             this.label1.TabIndex = 3;
@@ -88,7 +88,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 189);
+            this.label2.Location = new System.Drawing.Point(72, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 15);
             this.label2.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             // richTextSituacion
             // 
-            this.richTextSituacion.Location = new System.Drawing.Point(201, 114);
+            this.richTextSituacion.Location = new System.Drawing.Point(201, 70);
             this.richTextSituacion.Name = "richTextSituacion";
             this.richTextSituacion.Size = new System.Drawing.Size(1617, 59);
             this.richTextSituacion.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             // richTextMarcoConcep
             // 
-            this.richTextMarcoConcep.Location = new System.Drawing.Point(201, 189);
+            this.richTextMarcoConcep.Location = new System.Drawing.Point(201, 146);
             this.richTextMarcoConcep.Name = "richTextMarcoConcep";
             this.richTextMarcoConcep.Size = new System.Drawing.Size(1617, 88);
             this.richTextMarcoConcep.TabIndex = 6;
@@ -113,7 +113,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 301);
+            this.label3.Location = new System.Drawing.Point(74, 246);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 15);
             this.label3.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             // richTextMarcoTec
             // 
-            this.richTextMarcoTec.Location = new System.Drawing.Point(201, 301);
+            this.richTextMarcoTec.Location = new System.Drawing.Point(201, 246);
             this.richTextMarcoTec.Name = "richTextMarcoTec";
             this.richTextMarcoTec.Size = new System.Drawing.Size(1617, 86);
             this.richTextMarcoTec.TabIndex = 8;
@@ -130,7 +130,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(74, 650);
+            this.label4.Location = new System.Drawing.Point(74, 547);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 9;
@@ -138,7 +138,7 @@
             // 
             // richTextEstadoArte
             // 
-            this.richTextEstadoArte.Location = new System.Drawing.Point(201, 410);
+            this.richTextEstadoArte.Location = new System.Drawing.Point(201, 347);
             this.richTextEstadoArte.Name = "richTextEstadoArte";
             this.richTextEstadoArte.Size = new System.Drawing.Size(1617, 80);
             this.richTextEstadoArte.TabIndex = 10;
@@ -147,7 +147,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(74, 410);
+            this.label5.Location = new System.Drawing.Point(74, 347);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 15);
             this.label5.TabIndex = 11;
@@ -155,7 +155,7 @@
             // 
             // richTextMetodologia
             // 
-            this.richTextMetodologia.Location = new System.Drawing.Point(201, 522);
+            this.richTextMetodologia.Location = new System.Drawing.Point(201, 438);
             this.richTextMetodologia.Name = "richTextMetodologia";
             this.richTextMetodologia.Size = new System.Drawing.Size(1617, 96);
             this.richTextMetodologia.TabIndex = 12;
@@ -164,7 +164,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(72, 522);
+            this.label6.Location = new System.Drawing.Point(74, 438);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 15);
             this.label6.TabIndex = 13;
@@ -172,7 +172,7 @@
             // 
             // richTextObjetivos
             // 
-            this.richTextObjetivos.Location = new System.Drawing.Point(201, 647);
+            this.richTextObjetivos.Location = new System.Drawing.Point(201, 547);
             this.richTextObjetivos.Name = "richTextObjetivos";
             this.richTextObjetivos.Size = new System.Drawing.Size(1617, 103);
             this.richTextObjetivos.TabIndex = 14;
@@ -181,7 +181,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(74, 779);
+            this.label7.Location = new System.Drawing.Point(72, 662);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 15);
             this.label7.TabIndex = 15;
@@ -189,7 +189,7 @@
             // 
             // richTextJustificacion
             // 
-            this.richTextJustificacion.Location = new System.Drawing.Point(201, 776);
+            this.richTextJustificacion.Location = new System.Drawing.Point(201, 662);
             this.richTextJustificacion.Name = "richTextJustificacion";
             this.richTextJustificacion.Size = new System.Drawing.Size(1617, 103);
             this.richTextJustificacion.TabIndex = 16;
@@ -198,7 +198,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(74, 908);
+            this.label8.Location = new System.Drawing.Point(67, 790);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 15);
             this.label8.TabIndex = 17;
@@ -207,7 +207,7 @@
             // 
             // richTextReferencias
             // 
-            this.richTextReferencias.Location = new System.Drawing.Point(201, 905);
+            this.richTextReferencias.Location = new System.Drawing.Point(201, 790);
             this.richTextReferencias.Name = "richTextReferencias";
             this.richTextReferencias.Size = new System.Drawing.Size(1617, 103);
             this.richTextReferencias.TabIndex = 18;
@@ -217,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1855, 1061);
+            this.ClientSize = new System.Drawing.Size(1855, 948);
             this.Controls.Add(this.richTextReferencias);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.richTextJustificacion);
