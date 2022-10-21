@@ -68,10 +68,8 @@ namespace proyectoDB
                     }
                     else
                     {
-                        Session.id = datosUsuario.Id;
                         Session.usuario = usuario;
                         Session.nombre = datosUsuario.Nombre;
-                        Session.id_tipo = datosUsuario.Id_tipo;
                     }
                 }
             }

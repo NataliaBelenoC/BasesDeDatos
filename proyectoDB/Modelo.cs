@@ -15,12 +15,12 @@ namespace proyectoDB
         {
             conexion.conectar();
 
-            string sql = "INSERT INTO usuarios (usuario, password, nombre, id_tipo) VALUES(@usuario, @password, @nombre, @id_tipo)";
+            string sql = "INSERT INTO usuario (u_correoelectronico, u_contrasena, u_nombres, u_apellidos) VALUES(@usuario, @password, @nombre, @apellido)";
             MySqlCommand comando = new MySqlCommand(sql, conexion.MyCon);
             comando.Parameters.AddWithValue("@usuario", usuario.Usuario);
             comando.Parameters.AddWithValue("@password", usuario.Password);
             comando.Parameters.AddWithValue("@nombre", usuario.Nombre);
-            comando.Parameters.AddWithValue("@id_tipo", 1);
+            comando.Parameters.AddWithValue("@apellido", usuario.Apellido);
 
             int resultado = comando.ExecuteNonQuery();
 
@@ -32,7 +32,7 @@ namespace proyectoDB
             MySqlDataReader reader;
             conexion.conectar();
 
-            string sql = "SELECT id FROM usuarios WHERE usuario LIKE @usuario";
+            string sql = "SELECT u_correoelectronico FROM usuario WHERE u_correoelectronico LIKE @usuario";
             MySqlCommand comando = new MySqlCommand(sql, conexion.MyCon);
             comando.Parameters.AddWithValue("@usuario", usuario);
 
@@ -53,7 +53,7 @@ namespace proyectoDB
             MySqlDataReader reader;
             conexion.conectar();
 
-            string sql = "SELECT id, password, nombre, id_tipo FROM usuarios WHERE usuario LIKE @usuario";
+            string sql = "SELECT u_contrasena, u_nombres, u_apellidos FROM usuario WHERE u_correoelectronico LIKE @usuario";
             MySqlCommand comando = new MySqlCommand(sql, conexion.MyCon);
             comando.Parameters.AddWithValue("@usuario", usuario);
 
@@ -64,10 +64,9 @@ namespace proyectoDB
             while (reader.Read())
             {
                 usr = new Usuarios();
-                usr.Id = int.Parse(reader["id"].ToString());
-                usr.Password = reader["password"].ToString();
-                usr.Nombre = reader["nombre"].ToString();
-                usr.Id_tipo = int.Parse(reader["id_tipo"].ToString());
+                usr.Password = reader["u_contrasena"].ToString();
+                usr.Nombre = reader["u_nombres"].ToString();
+                usr.Apellido = reader["u_apellidos"].ToString();
             }
             return usr;
         }
