@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +25,10 @@ namespace proyectoDB
                     if (modeloIniciativas.existeIniciativa(iniciativa.Nombrei))
                     {
                         respuesta = "La iniciativa ya existe";
+                    }
+                    else
+                    {
+                        modeloIniciativas.registroiniciativa(iniciativa);
                     }
                 }
             }
