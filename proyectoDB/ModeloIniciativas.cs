@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using proyectoDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
