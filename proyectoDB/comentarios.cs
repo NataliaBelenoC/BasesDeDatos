@@ -22,6 +22,7 @@ namespace proyectoDB
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
+            int idvacio = 0;
             string query = "";
             string queryc = "";
             string mensajeError = "";
@@ -39,35 +40,14 @@ namespace proyectoDB
             }
             if (mensajeError == "")
             {
-                string where = "where";
-                if (txtCorreoElectronico.Text != null)
-                {
-                    where += " fc_correo like '%" + txtCorreoElectronico.Text + "%' ";
-                }
-                else
-                {
-                    MessageBox.Show("hay almenos un campo vacio del correo y de la contraseña");
-                }
-                if (txtNombre.Text != null)
-                {
-                    where += " and fc_nombres like '%" + txtNombre.Text + "%' ";
-                }
-                else
-                {
-                    MessageBox.Show("hay almenos un campo vacio del correo y de la contraseña");
-                }
-                string querry = "select fc_correo, fc_nombres from formulariocontacto" + where + ";";
-                MySqlCommand busquedafc = new MySqlCommand(querry, conexion.MyCon);
-                busquedafc.CommandTimeout = 60;
-                if (busquedafc == null)
-                {
-                    query = "insert into formulariocontacto " +
-                    "(fc_nombres,fc_correo) values " +
-                    "('" + txtNombre.Text + "','" + txtCorreoElectronico.Text + "')";
-                    MySqlCommand formulariocontacto = new MySqlCommand(query, conexion.MyCon);
-                    formulariocontacto.CommandTimeout = 60;
-                }
-                string wherefc = "where fc_correo like '%" + txtCorreoElectronico.Text + "%' ";
+                query = "insert into formulariocontacto" +
+                        "(fc_nombres,fc_correo) values " +
+                        "('" + txtNombre.Text + "','" + txtCorreoElectronico.Text + "')";
+                MySqlCommand formulariocontacto = conexion.MyCon.CreateCommand();
+                formulariocontacto.CommandText = "INSERT INTO formulariocontacto(fc_nombres,fc_correo) VALUES" + "('" + txtNombre.Text + "','" + txtCorreoElectronico.Text + "')";
+                formulariocontacto.ExecuteNonQuery();
+                conexion.MyCon.Close();
+                string wherefc = " where fc_correo like '%" + txtCorreoElectronico.Text + "%' ";
                 string querryfc = "select fc_id from formulariocontacto" + wherefc + ";";
                 MySqlCommand idformulariocontacto = new MySqlCommand(querryfc, conexion.MyCon);
                 idformulariocontacto.CommandTimeout = 60;
@@ -91,8 +71,8 @@ namespace proyectoDB
                 try
                 {
                     queryc = "insert into comentario " +
-                    "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " +
-                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + Convert.ToString(idfc) + "')";
+                    "(c_puntuacion,c_descripcion,fk_formulariocontacto,fk_iniciativa) values " +
+                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + Convert.ToString(idfc) + "','" + idvacio + "')";
                     MySqlCommand comentario = new MySqlCommand(queryc, conexion.MyCon);
                     comentario.CommandTimeout = 60;
                 }
