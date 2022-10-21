@@ -30,6 +30,7 @@ namespace proyectoDB
             usuario.Password = txtPassword.Text;
             usuario.ConPassword = txtConPassword.Text;
             usuario.Nombre = txtNombre.Text;
+            usuario.Apellido = txtApellido.Text;
 
             try
             {
