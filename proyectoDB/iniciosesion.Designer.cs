@@ -33,6 +33,7 @@
             this.lblContrasena = new System.Windows.Forms.Label();
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblregistro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCorreoElectronico
@@ -77,11 +78,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblregistro
+            // 
+            this.lblregistro.AutoSize = true;
+            this.lblregistro.Location = new System.Drawing.Point(37, 171);
+            this.lblregistro.Name = "lblregistro";
+            this.lblregistro.Size = new System.Drawing.Size(47, 15);
+            this.lblregistro.TabIndex = 5;
+            this.lblregistro.Text = "registro";
+            this.lblregistro.Click += new System.EventHandler(this.lblregistro_Click);
+            // 
             // iniciosesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 281);
+            this.Controls.Add(this.lblregistro);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblContrasena);
@@ -101,5 +113,6 @@
         private Label lblContrasena;
         private TextBox txtContrasena;
         private Button button1;
+        private Label lblregistro;
     }
 }

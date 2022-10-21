@@ -57,22 +57,34 @@ namespace proyectoDB
             if (estudiantes != null)
             {
                 this.Hide();
-                comentarios comentarios = new comentarios();
-                comentarios.Show();
+                menu menu = new menu();
+                menu.lblcorreo.Text = txtCorreoElectronico.Text;
+                menu.lblcorreo.Visible = false;
+                menu.Show();
             }
             else
             {
                if(usuarios != null)
                 {
                     this.Hide();
-                    comentarios comentarios = new comentarios();
-                    comentarios.Show();
+                    menu menu = new menu();
+                    menu.lblcorreo.Text = txtCorreoElectronico.Text;
+                    menu.lblcorreo.Visible = false;
+                    menu.Show();
                 }
                 else
                 {
                     MessageBox.Show("hay almenos un campo incorrecto del correo y de la contraseña");
                 }
             }
+        }
+
+        private void lblregistro_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroUsuarios registroUsuarios = new RegistroUsuarios();
+            registroUsuarios.btneditar.Visible = false;
+            registroUsuarios.Show();
         }
     }
 }
