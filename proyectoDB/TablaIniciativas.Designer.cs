@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.dginiciativas = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.Columnid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Columnnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dginiciativas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,12 +41,22 @@
             this.dginiciativas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Columnid,
             this.Columnnombre});
-            this.dginiciativas.Location = new System.Drawing.Point(279, 215);
+            this.dginiciativas.Location = new System.Drawing.Point(103, 189);
             this.dginiciativas.Name = "dginiciativas";
             this.dginiciativas.RowTemplate.Height = 25;
-            this.dginiciativas.Size = new System.Drawing.Size(240, 150);
+            this.dginiciativas.Size = new System.Drawing.Size(643, 228);
             this.dginiciativas.TabIndex = 0;
             this.dginiciativas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(384, 115);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(96, 40);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Recargar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Columnid
             // 
@@ -57,16 +67,7 @@
             // 
             this.Columnnombre.HeaderText = "Nombre";
             this.Columnnombre.Name = "Columnnombre";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(353, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Recargar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Columnnombre.Width = 500;
             // 
             // TablaIniciativas
             // 
@@ -85,8 +86,8 @@
         #endregion
 
         private DataGridView dginiciativas;
+        private Button button1;
         private DataGridViewTextBoxColumn Columnid;
         private DataGridViewTextBoxColumn Columnnombre;
-        private Button button1;
     }
 }
