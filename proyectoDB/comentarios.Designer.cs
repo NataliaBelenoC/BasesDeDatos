@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rtbescripcion = new System.Windows.Forms.RichTextBox();
+            this.rtbDescripcion = new System.Windows.Forms.RichTextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtCorreoElectronico = new System.Windows.Forms.TextBox();
@@ -36,16 +36,17 @@
             this.lblCorreoElectronico = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblPuntuacion = new System.Windows.Forms.Label();
-            this.txtPuntuacion = new System.Windows.Forms.TextBox();
+            this.numPuntuacion = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numPuntuacion)).BeginInit();
             this.SuspendLayout();
             // 
-            // rtbescripcion
+            // rtbDescripcion
             // 
-            this.rtbescripcion.Location = new System.Drawing.Point(28, 262);
-            this.rtbescripcion.Name = "rtbescripcion";
-            this.rtbescripcion.Size = new System.Drawing.Size(748, 116);
-            this.rtbescripcion.TabIndex = 0;
-            this.rtbescripcion.Text = "";
+            this.rtbDescripcion.Location = new System.Drawing.Point(28, 262);
+            this.rtbDescripcion.Name = "rtbDescripcion";
+            this.rtbDescripcion.Size = new System.Drawing.Size(748, 116);
+            this.rtbDescripcion.TabIndex = 0;
+            this.rtbDescripcion.Text = "";
             // 
             // btnEnviar
             // 
@@ -55,6 +56,7 @@
             this.btnEnviar.TabIndex = 1;
             this.btnEnviar.Text = "enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // lblDescripcion
             // 
@@ -106,19 +108,19 @@
             this.lblPuntuacion.TabIndex = 8;
             this.lblPuntuacion.Text = "Puntuación";
             // 
-            // txtPuntuacion
+            // numPuntuacion
             // 
-            this.txtPuntuacion.Location = new System.Drawing.Point(28, 195);
-            this.txtPuntuacion.Name = "txtPuntuacion";
-            this.txtPuntuacion.Size = new System.Drawing.Size(100, 23);
-            this.txtPuntuacion.TabIndex = 9;
+            this.numPuntuacion.Location = new System.Drawing.Point(28, 195);
+            this.numPuntuacion.Name = "numPuntuacion";
+            this.numPuntuacion.Size = new System.Drawing.Size(120, 23);
+            this.numPuntuacion.TabIndex = 9;
             // 
             // comentarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtPuntuacion);
+            this.Controls.Add(this.numPuntuacion);
             this.Controls.Add(this.lblPuntuacion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCorreoElectronico);
@@ -126,9 +128,10 @@
             this.Controls.Add(this.txtCorreoElectronico);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.rtbescripcion);
+            this.Controls.Add(this.rtbDescripcion);
             this.Name = "comentarios";
             this.Text = "comentarios";
+            ((System.ComponentModel.ISupportInitialize)(this.numPuntuacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,7 +139,7 @@
 
         #endregion
 
-        private RichTextBox rtbescripcion;
+        private RichTextBox rtbDescripcion;
         private Button btnEnviar;
         private Label lblDescripcion;
         private TextBox txtCorreoElectronico;
@@ -144,6 +147,6 @@
         private Label lblCorreoElectronico;
         private Label lblNombre;
         private Label lblPuntuacion;
-        private TextBox txtPuntuacion;
+        private NumericUpDown numPuntuacion;
     }
 }
