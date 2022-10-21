@@ -51,7 +51,7 @@ namespace proyectoDB
             {
                 MessageBox.Show("hay almenos un campo vacio del correo y de la contraseña");
             }
-            string querryu = "select e_correoelectronico, e_contrasena from estudiante" + whereu + ";";
+            string querryu = "select u_correoelectronico, u_contrasena from estudiante" + whereu + ";";
             MySqlCommand usuarios = new MySqlCommand(querryu, conexion.MyCon);
             usuarios.CommandTimeout = 60;
             if (estudiantes != null)
