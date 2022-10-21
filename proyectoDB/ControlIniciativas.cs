@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyectoDB
 {
-    internal class ControlIniciativas
+    class ControlIniciativas
     {
         public string ctrlRegistroIniciativa(Iniciativas iniciativa)
         {
