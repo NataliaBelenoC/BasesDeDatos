@@ -12,11 +12,12 @@ namespace proyectoDB
         public MySqlConnection MyCon;
         public void conectar()
         {
-            string server = "jagua";
+            string server = "localhost";
             string database = "proyectodb";
             string user = "root";
+            string port = "3306";
             string pwd = "jagua123456";
-            string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";pwd=" + pwd + ";";
+            string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";pwd=" + pwd + ";port=" + port + ";";
             MyCon = new MySqlConnection(cadenaConexion);
             MyCon.Open();
         }
