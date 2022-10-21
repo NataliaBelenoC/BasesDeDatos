@@ -15,7 +15,7 @@ namespace proyectoDB
             Modelo modelo = new Modelo();
             string respuesta = "";
 
-            if (string.IsNullOrEmpty(usuario.Usuario) || string.IsNullOrEmpty(usuario.Password) || string.IsNullOrEmpty(usuario.ConPassword) || string.IsNullOrEmpty(usuario.Nombre))
+            if (string.IsNullOrEmpty(usuario.Usuario) || string.IsNullOrEmpty(usuario.Password) || string.IsNullOrEmpty(usuario.ConPassword) || string.IsNullOrEmpty(usuario.Nombre) || string.IsNullOrEmpty(usuario.Apellido))
             {
                 respuesta = "Debe llenar todos los campos";
             }
@@ -40,40 +40,6 @@ namespace proyectoDB
             }
             return respuesta;
 
-        }
-
-        public string ctrlLogin(string usuario, string password)
-        {
-            Modelo modelo = new Modelo();
-            string respuesta = "";
-            Usuarios datosUsuario = null;
-
-            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(password))
-            {
-                respuesta = "Debe llenar todos los campos";
-            }
-            else
-            {
-                datosUsuario = modelo.porUsuario(usuario);
-
-                if (datosUsuario == null)
-                {
-                    respuesta = "El usuario no existe";
-                }
-                else
-                {
-                    if (datosUsuario.Password != generarSHA1(password))
-                    {
-                        respuesta = "El usuario y/o contraseña no coinciden";
-                    }
-                    else
-                    {
-                        Session.usuario = usuario;
-                        Session.nombre = datosUsuario.Nombre;
-                    }
-                }
-            }
-            return respuesta;
         }
 
         private string generarSHA1(string cadena)
