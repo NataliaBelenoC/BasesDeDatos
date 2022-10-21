@@ -71,7 +71,7 @@ namespace proyectoDB
                 MySqlCommand idformulariocontacto = new MySqlCommand(querryfc, conexion.MyCon);
                 idformulariocontacto.CommandTimeout = 60;
                 MySqlDataReader reader;
-                int hola;
+                int idfc;
                 try
                 {
                     reader = idformulariocontacto.ExecuteReader();
@@ -79,7 +79,7 @@ namespace proyectoDB
                     {
                         while (reader.Read())
                         {
-                            hola = reader.GetInt32(0);
+                            idfc = reader.GetInt32(0);
                         }
                     }
                 }
