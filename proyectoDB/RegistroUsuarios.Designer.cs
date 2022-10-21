@@ -37,6 +37,8 @@
             this.txtConPassword = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -72,9 +74,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(95, 241);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 15);
+            this.label4.Size = new System.Drawing.Size(62, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Nombre: ";
+            this.label4.Text = "Nombres: ";
             // 
             // txtUsuario
             // 
@@ -106,7 +108,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(291, 297);
+            this.btnRegistrar.Location = new System.Drawing.Point(292, 330);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(118, 55);
             this.btnRegistrar.TabIndex = 8;
@@ -114,11 +116,29 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(95, 296);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 15);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Apellidos: ";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(241, 288);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(287, 23);
+            this.txtApellido.TabIndex = 10;
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtConPassword);
@@ -146,5 +166,7 @@
         private TextBox txtConPassword;
         private TextBox txtNombre;
         private Button btnRegistrar;
+        private Label label5;
+        private TextBox txtApellido;
     }
 }

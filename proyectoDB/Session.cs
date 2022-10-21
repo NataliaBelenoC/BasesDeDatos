@@ -8,7 +8,6 @@ namespace proyectoDB
 {
     public class Session
     {
-        public static int id, id_tipo;
         public static string usuario, nombre;
     }
 }
