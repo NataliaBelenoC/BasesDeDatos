@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace proyectoDB
 {
-    internal class Conexion
+    public class Conexion
     {
-        MySqlConnection MyCon;
+        public MySqlConnection MyCon;
         public void conectar()
         {
             string server = "localhost";
