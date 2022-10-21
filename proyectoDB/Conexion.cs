@@ -12,7 +12,7 @@ namespace proyectoDB
         public MySqlConnection MyCon;
         public void conectar()
         {
-            string server = "localhost";
+            string server = "jagua";
             string database = "proyectodb";
             string user = "root";
             string pwd = "jagua123456";

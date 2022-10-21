@@ -8,7 +8,7 @@ namespace proyectoDB
 {
     class Iniciativas
     {
-        string nombrei, situacionproblema, marcoconceptual, marcotecnologico, estadoarte, metodología, objetivos, justificacion, referencias ;
+        string nombrei, situacionproblema, marcoconceptual, marcotecnologico, estadoarte, metodología, objetivos, justificacion, referencias;
         public string Nombrei { get => nombrei; set => nombrei = value; }
         public string SituacionProblema { get => situacionproblema; set => situacionproblema = value; }
         public string MarcoConceptual { get => marcoconceptual; set => marcoconceptual = value; }
