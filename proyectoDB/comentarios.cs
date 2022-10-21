@@ -23,6 +23,7 @@ namespace proyectoDB
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             string query = "";
+            string queryc = "";
             string mensajeError = "";
             if (txtCorreoElectronico.Text == "")
             {
@@ -71,7 +72,7 @@ namespace proyectoDB
                 MySqlCommand idformulariocontacto = new MySqlCommand(querryfc, conexion.MyCon);
                 idformulariocontacto.CommandTimeout = 60;
                 MySqlDataReader reader;
-                int idfc;
+                int idfc = 0;
                 try
                 {
                     reader = idformulariocontacto.ExecuteReader();
@@ -84,6 +85,18 @@ namespace proyectoDB
                     }
                 }
                 catch(Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
+                try
+                {
+                    queryc = "insert into comentario " +
+                    "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " +
+                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + Convert.ToString(idfc) + "')";
+                    MySqlCommand comentario = new MySqlCommand(queryc, conexion.MyCon);
+                    comentario.CommandTimeout = 60;
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex);
                 }
