@@ -39,6 +39,8 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
+            this.btneditar = new System.Windows.Forms.Button();
+            this.lblcorreo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -108,7 +110,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(292, 330);
+            this.btnRegistrar.Location = new System.Drawing.Point(241, 333);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(118, 55);
             this.btnRegistrar.TabIndex = 8;
@@ -132,11 +134,31 @@
             this.txtApellido.Size = new System.Drawing.Size(287, 23);
             this.txtApellido.TabIndex = 10;
             // 
+            // btneditar
+            // 
+            this.btneditar.Location = new System.Drawing.Point(425, 333);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(103, 55);
+            this.btneditar.TabIndex = 11;
+            this.btneditar.Text = "editar";
+            this.btneditar.UseVisualStyleBackColor = true;
+            // 
+            // lblcorreo
+            // 
+            this.lblcorreo.AutoSize = true;
+            this.lblcorreo.Location = new System.Drawing.Point(750, 426);
+            this.lblcorreo.Name = "lblcorreo";
+            this.lblcorreo.Size = new System.Drawing.Size(38, 15);
+            this.lblcorreo.TabIndex = 12;
+            this.lblcorreo.Text = "label6";
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblcorreo);
+            this.Controls.Add(this.btneditar);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegistrar);
@@ -165,8 +187,10 @@
         private TextBox txtPassword;
         private TextBox txtConPassword;
         private TextBox txtNombre;
-        private Button btnRegistrar;
         private Label label5;
         private TextBox txtApellido;
+        public Label lblcorreo;
+        public Button btneditar;
+        public Button btnRegistrar;
     }
 }
