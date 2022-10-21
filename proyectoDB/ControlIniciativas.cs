@@ -25,6 +25,10 @@ namespace proyectoDB
                     {
                         respuesta = "La iniciativa ya existe";
                     }
+                    else
+                    {
+                        modeloIniciativas.registroiniciativa(iniciativa);
+                    }
                 }
             }
             return respuesta;
