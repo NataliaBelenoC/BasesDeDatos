@@ -15,7 +15,7 @@ namespace proyectoDB
         {
             conexion.conectar();
 
-            string sql = "INSERT INTO formularioiniciativa (fi_nombre, fi_situacionproblema, fi_marcoconceptual, fi_marcotecnologico, fi_estadoarte, fi_metodologia, fi_objetivos, fi_justificacion, fi_referencias) VALUES(@usuario, @password, @nombre, @apellido)";
+            string sql = "INSERT INTO formularioiniciativa (fi_nombre, fi_situacionproblema, fi_marcoconceptual, fi_marcotecnologico, fi_estadoarte, fi_metodologia, fi_objetivos, fi_justificacion, fi_referencias) VALUES (@nombrei, @situacionproblema, @marcoconceptual, @marcotecnologico, @estadoarte, @metodología, @objetivos, @justificacion, @referencias)";
             MySqlCommand comando = new MySqlCommand(sql, conexion.MyCon);
             comando.Parameters.AddWithValue("@nombrei", iniciativa.Nombrei);
             comando.Parameters.AddWithValue("@situacionproblema", iniciativa.SituacionProblema);
