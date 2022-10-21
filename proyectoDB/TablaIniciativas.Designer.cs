@@ -41,7 +41,7 @@
             this.dginiciativas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Columnid,
             this.Columnnombre});
-            this.dginiciativas.Location = new System.Drawing.Point(103, 189);
+            this.dginiciativas.Location = new System.Drawing.Point(103, 115);
             this.dginiciativas.Name = "dginiciativas";
             this.dginiciativas.RowTemplate.Height = 25;
             this.dginiciativas.Size = new System.Drawing.Size(643, 228);
@@ -50,7 +50,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(384, 115);
+            this.button1.Location = new System.Drawing.Point(379, 363);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 40);
             this.button1.TabIndex = 1;
