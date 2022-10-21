@@ -52,5 +52,10 @@ namespace proyectoDB
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void RegistroUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
