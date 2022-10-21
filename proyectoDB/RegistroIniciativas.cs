@@ -61,5 +61,13 @@ namespace proyectoDB
         {
 
         }
+
+        private void lblmenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menu menu = new menu();
+            menu.lblcorreo.Visible = false;
+            menu.Show();
+        }
     }
 }

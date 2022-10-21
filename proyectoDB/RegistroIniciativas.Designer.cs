@@ -47,12 +47,13 @@
             this.richTextJustificacion = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.richTextReferencias = new System.Windows.Forms.RichTextBox();
+            this.lblmenu = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // fjainfisfa
             // 
             this.fjainfisfa.AutoSize = true;
-            this.fjainfisfa.Location = new System.Drawing.Point(74, 19);
+            this.fjainfisfa.Location = new System.Drawing.Point(74, 31);
             this.fjainfisfa.Name = "fjainfisfa";
             this.fjainfisfa.Size = new System.Drawing.Size(54, 15);
             this.fjainfisfa.TabIndex = 0;
@@ -71,7 +72,7 @@
             // 
             // txtNombrei
             // 
-            this.txtNombrei.Location = new System.Drawing.Point(201, 19);
+            this.txtNombrei.Location = new System.Drawing.Point(201, 31);
             this.txtNombrei.Name = "txtNombrei";
             this.txtNombrei.Size = new System.Drawing.Size(260, 23);
             this.txtNombrei.TabIndex = 2;
@@ -213,11 +214,22 @@
             this.richTextReferencias.TabIndex = 18;
             this.richTextReferencias.Text = "";
             // 
+            // lblmenu
+            // 
+            this.lblmenu.AutoSize = true;
+            this.lblmenu.Location = new System.Drawing.Point(12, 9);
+            this.lblmenu.Name = "lblmenu";
+            this.lblmenu.Size = new System.Drawing.Size(95, 15);
+            this.lblmenu.TabIndex = 19;
+            this.lblmenu.Text = "regresar al menu";
+            this.lblmenu.Click += new System.EventHandler(this.lblmenu_Click);
+            // 
             // RegistroIniciativas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1855, 948);
+            this.Controls.Add(this.lblmenu);
             this.Controls.Add(this.richTextReferencias);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.richTextJustificacion);
@@ -265,5 +277,6 @@
         private RichTextBox richTextJustificacion;
         private Label label8;
         private RichTextBox richTextReferencias;
+        private Label lblmenu;
     }
 }
