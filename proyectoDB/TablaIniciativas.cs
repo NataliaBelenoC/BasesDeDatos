@@ -56,5 +56,10 @@ namespace proyectoDB
             }
 
         }
+
+        private void TablaIniciativas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

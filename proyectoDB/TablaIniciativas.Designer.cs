@@ -44,7 +44,7 @@
             this.dginiciativas.Location = new System.Drawing.Point(103, 115);
             this.dginiciativas.Name = "dginiciativas";
             this.dginiciativas.RowTemplate.Height = 25;
-            this.dginiciativas.Size = new System.Drawing.Size(643, 228);
+            this.dginiciativas.Size = new System.Drawing.Size(643, 221);
             this.dginiciativas.TabIndex = 0;
             this.dginiciativas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -78,6 +78,7 @@
             this.Controls.Add(this.dginiciativas);
             this.Name = "TablaIniciativas";
             this.Text = "TablaIniciativas";
+            this.Load += new System.EventHandler(this.TablaIniciativas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dginiciativas)).EndInit();
             this.ResumeLayout(false);
 
