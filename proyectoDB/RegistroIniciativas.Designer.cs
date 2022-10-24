@@ -58,7 +58,6 @@
             this.fjainfisfa.Size = new System.Drawing.Size(54, 15);
             this.fjainfisfa.TabIndex = 0;
             this.fjainfisfa.Text = "Nombre:";
-            this.fjainfisfa.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
@@ -204,7 +203,6 @@
             this.label8.Size = new System.Drawing.Size(70, 15);
             this.label8.TabIndex = 17;
             this.label8.Text = "Referencias:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // richTextReferencias
             // 

@@ -22,8 +22,6 @@ namespace proyectoDB
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            int idvacio = 0;
-            string query = "";
             string queryc = "";
             string mensajeError = "";
             if (txtCorreoElectronico.Text == "")
@@ -36,17 +34,13 @@ namespace proyectoDB
             }
             if (rtbDescripcion.Text == "")
             {
-                mensajeError = mensajeError + "La edad no puede estar vacio";
+                mensajeError = mensajeError + "la decripcion no puede estar vacio";
             }
             if (mensajeError == "")
             {
-                query = "insert into formulariocontacto" +
-                        "(fc_nombres,fc_correo) values " +
-                        "('" + txtNombre.Text + "','" + txtCorreoElectronico.Text + "')";
                 MySqlCommand formulariocontacto = conexion.MyCon.CreateCommand();
                 formulariocontacto.CommandText = "INSERT INTO formulariocontacto(fc_nombres,fc_correo) VALUES" + "('" + txtNombre.Text + "','" + txtCorreoElectronico.Text + "')";
                 formulariocontacto.ExecuteNonQuery();
-                conexion.MyCon.Close();
                 string wherefc = " where fc_correo like '%" + txtCorreoElectronico.Text + "%' ";
                 string querryfc = "select fc_id from formulariocontacto" + wherefc + ";";
                 MySqlCommand idformulariocontacto = new MySqlCommand(querryfc, conexion.MyCon);
@@ -71,8 +65,8 @@ namespace proyectoDB
                 try
                 {
                     queryc = "insert into comentario " +
-                    "(c_puntuacion,c_descripcion,fk_formulariocontacto,fk_iniciativa) values " +
-                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + Convert.ToString(idfc) + "','" + idvacio + "')";
+                    "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " +
+                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + idfc + "')";
                     MySqlCommand comentario = new MySqlCommand(queryc, conexion.MyCon);
                     comentario.CommandTimeout = 60;
                 }

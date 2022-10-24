@@ -18,11 +18,6 @@ namespace proyectoDB
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Usuarios usuario = new Usuarios();
@@ -53,9 +48,11 @@ namespace proyectoDB
             }
         }
 
-        private void RegistroUsuarios_Load(object sender, EventArgs e)
+        private void lbliniciosesion_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            iniciosesion iniciosesion = new iniciosesion();
+            iniciosesion.Show();
         }
     }
 }

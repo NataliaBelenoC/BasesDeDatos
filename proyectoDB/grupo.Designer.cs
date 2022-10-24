@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnmienbros = new System.Windows.Forms.Button();
+            this.btnmiembros = new System.Windows.Forms.Button();
             this.lblmiembros = new System.Windows.Forms.Label();
             this.lbllider = new System.Windows.Forms.Label();
             this.txtlider = new System.Windows.Forms.TextBox();
-            this.txtmienbros = new System.Windows.Forms.TextBox();
+            this.txtmiembros = new System.Windows.Forms.TextBox();
             this.btnlider = new System.Windows.Forms.Button();
             this.lblmenu = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnmienbros
+            // btnmiembros
             // 
-            this.btnmienbros.Location = new System.Drawing.Point(47, 238);
-            this.btnmienbros.Name = "btnmienbros";
-            this.btnmienbros.Size = new System.Drawing.Size(113, 23);
-            this.btnmienbros.TabIndex = 0;
-            this.btnmienbros.Text = "agregar miembros";
-            this.btnmienbros.UseVisualStyleBackColor = true;
+            this.btnmiembros.Location = new System.Drawing.Point(51, 221);
+            this.btnmiembros.Name = "btnmiembros";
+            this.btnmiembros.Size = new System.Drawing.Size(113, 23);
+            this.btnmiembros.TabIndex = 0;
+            this.btnmiembros.Text = "agregar miembros";
+            this.btnmiembros.UseVisualStyleBackColor = true;
             // 
             // lblmiembros
             // 
             this.lblmiembros.AutoSize = true;
-            this.lblmiembros.Location = new System.Drawing.Point(20, 159);
+            this.lblmiembros.Location = new System.Drawing.Point(20, 165);
             this.lblmiembros.Name = "lblmiembros";
-            this.lblmiembros.Size = new System.Drawing.Size(57, 15);
+            this.lblmiembros.Size = new System.Drawing.Size(103, 15);
             this.lblmiembros.TabIndex = 1;
-            this.lblmiembros.Text = "mienbros";
+            this.lblmiembros.Text = "miembros(correo)";
             // 
             // lbllider
             // 
             this.lbllider.AutoSize = true;
-            this.lbllider.Location = new System.Drawing.Point(20, 49);
+            this.lbllider.Location = new System.Drawing.Point(20, 55);
             this.lbllider.Name = "lbllider";
-            this.lbllider.Size = new System.Drawing.Size(30, 15);
+            this.lbllider.Size = new System.Drawing.Size(72, 15);
             this.lbllider.TabIndex = 2;
-            this.lbllider.Text = "lider";
+            this.lbllider.Text = "lider(correo)";
             // 
             // txtlider
             // 
@@ -71,21 +71,22 @@
             this.txtlider.Size = new System.Drawing.Size(170, 23);
             this.txtlider.TabIndex = 3;
             // 
-            // txtmienbros
+            // txtmiembros
             // 
-            this.txtmienbros.Location = new System.Drawing.Point(20, 192);
-            this.txtmienbros.Name = "txtmienbros";
-            this.txtmienbros.Size = new System.Drawing.Size(170, 23);
-            this.txtmienbros.TabIndex = 4;
+            this.txtmiembros.Location = new System.Drawing.Point(20, 192);
+            this.txtmiembros.Name = "txtmiembros";
+            this.txtmiembros.Size = new System.Drawing.Size(170, 23);
+            this.txtmiembros.TabIndex = 4;
             // 
             // btnlider
             // 
-            this.btnlider.Location = new System.Drawing.Point(63, 124);
+            this.btnlider.Location = new System.Drawing.Point(62, 111);
             this.btnlider.Name = "btnlider";
             this.btnlider.Size = new System.Drawing.Size(86, 23);
             this.btnlider.TabIndex = 5;
             this.btnlider.Text = "agregar lider";
             this.btnlider.UseVisualStyleBackColor = true;
+            this.btnlider.Click += new System.EventHandler(this.btnlider_Click);
             // 
             // lblmenu
             // 
@@ -104,11 +105,11 @@
             this.ClientSize = new System.Drawing.Size(219, 330);
             this.Controls.Add(this.lblmenu);
             this.Controls.Add(this.btnlider);
-            this.Controls.Add(this.txtmienbros);
+            this.Controls.Add(this.txtmiembros);
             this.Controls.Add(this.txtlider);
             this.Controls.Add(this.lbllider);
             this.Controls.Add(this.lblmiembros);
-            this.Controls.Add(this.btnmienbros);
+            this.Controls.Add(this.btnmiembros);
             this.Name = "grupo";
             this.Text = "grupo";
             this.ResumeLayout(false);
@@ -118,11 +119,11 @@
 
         #endregion
 
-        private Button btnmienbros;
+        private Button btnmiembros;
         private Label lblmiembros;
         private Label lbllider;
         private TextBox txtlider;
-        private TextBox txtmienbros;
+        private TextBox txtmiembros;
         private Button btnlider;
         private Label lblmenu;
     }

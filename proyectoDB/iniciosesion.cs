@@ -84,6 +84,8 @@ namespace proyectoDB
             this.Hide();
             RegistroUsuarios registroUsuarios = new RegistroUsuarios();
             registroUsuarios.btneditar.Visible = false;
+            registroUsuarios.lblcorreo.Visible = false;
+            registroUsuarios.lblmenur.Visible = false;
             registroUsuarios.Show();
         }
     }

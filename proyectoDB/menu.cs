@@ -40,5 +40,19 @@ namespace proyectoDB
             RegistroIniciativas registroIniciativas = new RegistroIniciativas();
             registroIniciativas.Show();
         }
+
+        private void btncreargrupo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            grupo grupo = new grupo();
+            grupo.Show();
+        }
+
+        private void btnlistasiniciativa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TablaIniciativas tablaIniciativas = new TablaIniciativas(); 
+            tablaIniciativas.Show();
+        }
     }
 }

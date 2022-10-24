@@ -64,6 +64,7 @@
             this.btnlistasiniciativa.TabIndex = 2;
             this.btnlistasiniciativa.Text = "listas de iniciativas";
             this.btnlistasiniciativa.UseVisualStyleBackColor = true;
+            this.btnlistasiniciativa.Click += new System.EventHandler(this.btnlistasiniciativa_Click);
             // 
             // btncreargrupo
             // 
@@ -73,6 +74,7 @@
             this.btncreargrupo.TabIndex = 3;
             this.btncreargrupo.Text = "crear grupo";
             this.btncreargrupo.UseVisualStyleBackColor = true;
+            this.btncreargrupo.Click += new System.EventHandler(this.btncreargrupo_Click);
             // 
             // lblcerrarsesion
             // 

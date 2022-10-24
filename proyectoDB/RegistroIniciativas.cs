@@ -52,16 +52,6 @@ namespace proyectoDB
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblmenu_Click(object sender, EventArgs e)
         {
             this.Hide();

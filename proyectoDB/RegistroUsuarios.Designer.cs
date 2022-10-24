@@ -41,6 +41,8 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.btneditar = new System.Windows.Forms.Button();
             this.lblcorreo = new System.Windows.Forms.Label();
+            this.lbliniciosesion = new System.Windows.Forms.Label();
+            this.lblmenur = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +53,6 @@
             this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Correo:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -110,7 +111,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(241, 333);
+            this.btnRegistrar.Location = new System.Drawing.Point(241, 343);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(118, 55);
             this.btnRegistrar.TabIndex = 8;
@@ -136,7 +137,7 @@
             // 
             // btneditar
             // 
-            this.btneditar.Location = new System.Drawing.Point(425, 333);
+            this.btneditar.Location = new System.Drawing.Point(425, 343);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(103, 55);
             this.btneditar.TabIndex = 11;
@@ -152,11 +153,32 @@
             this.lblcorreo.TabIndex = 12;
             this.lblcorreo.Text = "label6";
             // 
+            // lbliniciosesion
+            // 
+            this.lbliniciosesion.AutoSize = true;
+            this.lbliniciosesion.Location = new System.Drawing.Point(241, 320);
+            this.lbliniciosesion.Name = "lbliniciosesion";
+            this.lbliniciosesion.Size = new System.Drawing.Size(72, 15);
+            this.lbliniciosesion.TabIndex = 13;
+            this.lbliniciosesion.Text = "inicio sesion";
+            this.lbliniciosesion.Click += new System.EventHandler(this.lbliniciosesion_Click);
+            // 
+            // lblmenur
+            // 
+            this.lblmenur.AutoSize = true;
+            this.lblmenur.Location = new System.Drawing.Point(12, 9);
+            this.lblmenur.Name = "lblmenur";
+            this.lblmenur.Size = new System.Drawing.Size(95, 15);
+            this.lblmenur.TabIndex = 14;
+            this.lblmenur.Text = "regresar al menu";
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblmenur);
+            this.Controls.Add(this.lbliniciosesion);
             this.Controls.Add(this.lblcorreo);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.txtApellido);
@@ -192,5 +214,7 @@
         public Label lblcorreo;
         public Button btneditar;
         public Button btnRegistrar;
+        private Label lbliniciosesion;
+        public Label lblmenur;
     }
 }
