@@ -108,6 +108,7 @@
             this.label2.Size = new System.Drawing.Size(98, 15);
             this.label2.TabIndex = 6;
             this.label2.Text = "Regrasar al menú";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TablaIniciativas
             // 

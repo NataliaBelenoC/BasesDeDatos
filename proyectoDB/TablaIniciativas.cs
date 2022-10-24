@@ -76,5 +76,13 @@ namespace proyectoDB
             listacomentarios.iniciativaid.Visible = false;
             listacomentarios.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menu menu = new menu();
+            menu.lblcorreo.Visible = false;
+            menu.Show();
+        }
     }
 }
