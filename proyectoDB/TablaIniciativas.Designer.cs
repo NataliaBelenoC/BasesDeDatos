@@ -33,9 +33,10 @@
             this.Columnnombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dginiciativas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // dginiciativas
@@ -81,13 +82,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(12, 101);
@@ -97,13 +91,20 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(12, 72);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
+            this.numericUpDown1.TabIndex = 5;
+            // 
             // TablaIniciativas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 522);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dginiciativas);
@@ -111,6 +112,7 @@
             this.Text = "TablaIniciativas";
             this.Load += new System.EventHandler(this.TablaIniciativas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dginiciativas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +125,7 @@
         private DataGridViewTextBoxColumn Columnid;
         private DataGridViewTextBoxColumn Columnnombre;
         private Label label1;
-        private TextBox textBox1;
         private Button button2;
+        private NumericUpDown numericUpDown1;
     }
 }
