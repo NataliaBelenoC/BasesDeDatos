@@ -78,5 +78,13 @@ namespace proyectoDB
                 MessageBox.Show(mensajeError);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            listacomentarios listacomentarios = new listacomentarios();
+            listacomentarios.iniciativaid.Visible = false;
+            listacomentarios.Show();
+        }
     }
 }
