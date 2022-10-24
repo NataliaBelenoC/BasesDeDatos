@@ -64,11 +64,9 @@ namespace proyectoDB
                 }
                 try
                 {
-                    queryc = "insert into comentario " +
-                    "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " +
-                    "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + idfc + "')";
-                    MySqlCommand comentario = new MySqlCommand(queryc, conexion.MyCon);
-                    comentario.CommandTimeout = 60;
+                    MySqlCommand comentario = conexion.MyCon.CreateCommand();
+                    comentario.CommandText = "insert into comentario " + "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " + "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + idfc + "')";
+                    comentario.ExecuteNonQuery();
                 }
                 catch (Exception ex)
                 {
