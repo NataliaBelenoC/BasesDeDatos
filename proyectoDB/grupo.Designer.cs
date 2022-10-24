@@ -35,6 +35,7 @@
             this.txtmiembros = new System.Windows.Forms.TextBox();
             this.btnlider = new System.Windows.Forms.Button();
             this.lblmenu = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnmiembros
@@ -99,11 +100,21 @@
             this.lblmenu.Text = "regresar al menu";
             this.lblmenu.Click += new System.EventHandler(this.lblmenu_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(62, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // grupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(219, 330);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblmenu);
             this.Controls.Add(this.btnlider);
             this.Controls.Add(this.txtmiembros);
@@ -127,5 +138,6 @@
         private TextBox txtmiembros;
         private Button btnlider;
         private Label lblmenu;
+        private Button button1;
     }
 }
