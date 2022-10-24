@@ -217,9 +217,9 @@
             this.lblmenu.AutoSize = true;
             this.lblmenu.Location = new System.Drawing.Point(12, 9);
             this.lblmenu.Name = "lblmenu";
-            this.lblmenu.Size = new System.Drawing.Size(95, 15);
+            this.lblmenu.Size = new System.Drawing.Size(169, 15);
             this.lblmenu.TabIndex = 19;
-            this.lblmenu.Text = "regresar al menu";
+            this.lblmenu.Text = "regresar a la creación de grupo";
             this.lblmenu.Click += new System.EventHandler(this.lblmenu_Click);
             // 
             // RegistroIniciativas

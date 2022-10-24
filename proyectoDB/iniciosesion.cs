@@ -60,6 +60,7 @@ namespace proyectoDB
                 menu menu = new menu();
                 menu.lblcorreo.Text = txtCorreoElectronico.Text;
                 menu.lblcorreo.Visible = false;
+                menu.lbleditarperfil.Visible = false;
                 menu.Show();
             }
             else
@@ -70,6 +71,7 @@ namespace proyectoDB
                     menu menu = new menu();
                     menu.lblcorreo.Text = txtCorreoElectronico.Text;
                     menu.lblcorreo.Visible = false;
+                    menu.lbleditarperfil.Visible = false;
                     menu.Show();
                 }
                 else

@@ -100,7 +100,7 @@
             this.Controls.Add(this.txtCorreoElectronico);
             this.Controls.Add(this.lblCorreoElectronico);
             this.Name = "iniciosesion";
-            this.Text = "Form1";
+            this.Text = "Inicio de Sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -20,21 +20,6 @@ namespace proyectoDB
             conexion.conectar();
             recargartabla();
         }
-
-        private void listacomentarios_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void recargartabla()
         {
             string query = "SELECT c_id, fc_nombres, fc_correo, c_puntuacion, c_descripcion FROM comentario, formulariocontacto, iniciativa WHERE fK_formulariocontacto = fc_id and fk_iniciativa = i_id and fk_iniciativa = " + iniciativaid.Text + ";";
@@ -77,6 +62,13 @@ namespace proyectoDB
             comentarios.lbliniciativaid.Text = iniciativaid.Text;
             comentarios.lbliniciativaid.Visible = false;
             comentarios.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TablaIniciativas tablaIniciativas = new TablaIniciativas();
+            tablaIniciativas.Show();
         }
     }
 }

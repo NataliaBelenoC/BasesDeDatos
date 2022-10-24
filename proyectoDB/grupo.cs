@@ -82,5 +82,12 @@ namespace proyectoDB
                 Console.WriteLine(ex);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroIniciativas registroIniciativas = new RegistroIniciativas();
+            registroIniciativas.Show();
+        }
     }
 }

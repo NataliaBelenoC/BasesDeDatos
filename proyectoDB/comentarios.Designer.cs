@@ -38,6 +38,7 @@
             this.lblPuntuacion = new System.Windows.Forms.Label();
             this.numPuntuacion = new System.Windows.Forms.NumericUpDown();
             this.lbliniciativaid = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numPuntuacion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,13 +125,22 @@
             this.lbliniciativaid.Size = new System.Drawing.Size(38, 15);
             this.lbliniciativaid.TabIndex = 10;
             this.lbliniciativaid.Text = "label1";
-            this.lbliniciativaid.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(182, 15);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Regresar a la lista de comentarios";
             // 
             // comentarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbliniciativaid);
             this.Controls.Add(this.numPuntuacion);
             this.Controls.Add(this.lblPuntuacion);
@@ -142,7 +152,7 @@
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.rtbDescripcion);
             this.Name = "comentarios";
-            this.Text = "comentarios";
+            this.Text = "Comentarios";
             ((System.ComponentModel.ISupportInitialize)(this.numPuntuacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,5 +171,6 @@
         private Label lblPuntuacion;
         private NumericUpDown numPuntuacion;
         public Label lbliniciativaid;
+        private Label label1;
     }
 }

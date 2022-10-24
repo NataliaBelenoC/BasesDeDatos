@@ -65,7 +65,7 @@ namespace proyectoDB
                 try
                 {
                     MySqlCommand comentario = conexion.MyCon.CreateCommand();
-                    comentario.CommandText = "insert into comentario " + "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " + "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + idfc + "','" +  + "')";
+                    comentario.CommandText = "insert into comentario " + "(c_puntuacion,c_descripcion,fk_formulariocontacto) values " + "('" + numPuntuacion.Value + "','" + rtbDescripcion.Text + "','" + idfc + "','" + lbliniciativaid.Text + "')";
                     comentario.ExecuteNonQuery();
                 }
                 catch (Exception ex)
@@ -77,11 +77,6 @@ namespace proyectoDB
             {
                 MessageBox.Show(mensajeError);
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

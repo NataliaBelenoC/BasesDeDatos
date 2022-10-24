@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lbleditarperfil = new System.Windows.Forms.Label();
-            this.btnregistroiniciativa = new System.Windows.Forms.Button();
             this.btnlistasiniciativa = new System.Windows.Forms.Button();
             this.btncreargrupo = new System.Windows.Forms.Button();
             this.lblcerrarsesion = new System.Windows.Forms.Label();
@@ -44,21 +43,12 @@
             this.lbleditarperfil.Size = new System.Drawing.Size(67, 15);
             this.lbleditarperfil.TabIndex = 0;
             this.lbleditarperfil.Text = "editar perfil";
+            this.lbleditarperfil.Visible = false;
             this.lbleditarperfil.Click += new System.EventHandler(this.lbleditarperfil_Click);
-            // 
-            // btnregistroiniciativa
-            // 
-            this.btnregistroiniciativa.Location = new System.Drawing.Point(65, 86);
-            this.btnregistroiniciativa.Name = "btnregistroiniciativa";
-            this.btnregistroiniciativa.Size = new System.Drawing.Size(126, 36);
-            this.btnregistroiniciativa.TabIndex = 1;
-            this.btnregistroiniciativa.Text = "registrar iniciativa";
-            this.btnregistroiniciativa.UseVisualStyleBackColor = true;
-            this.btnregistroiniciativa.Click += new System.EventHandler(this.btnregistroiniciativa_Click);
             // 
             // btnlistasiniciativa
             // 
-            this.btnlistasiniciativa.Location = new System.Drawing.Point(65, 158);
+            this.btnlistasiniciativa.Location = new System.Drawing.Point(65, 76);
             this.btnlistasiniciativa.Name = "btnlistasiniciativa";
             this.btnlistasiniciativa.Size = new System.Drawing.Size(126, 36);
             this.btnlistasiniciativa.TabIndex = 2;
@@ -68,7 +58,7 @@
             // 
             // btncreargrupo
             // 
-            this.btncreargrupo.Location = new System.Drawing.Point(65, 231);
+            this.btncreargrupo.Location = new System.Drawing.Point(65, 152);
             this.btncreargrupo.Name = "btncreargrupo";
             this.btncreargrupo.Size = new System.Drawing.Size(126, 36);
             this.btncreargrupo.TabIndex = 3;
@@ -89,7 +79,7 @@
             // lblcorreo
             // 
             this.lblcorreo.AutoSize = true;
-            this.lblcorreo.Location = new System.Drawing.Point(222, 320);
+            this.lblcorreo.Location = new System.Drawing.Point(222, 215);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(38, 15);
             this.lblcorreo.TabIndex = 5;
@@ -99,12 +89,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 344);
+            this.ClientSize = new System.Drawing.Size(272, 241);
             this.Controls.Add(this.lblcorreo);
             this.Controls.Add(this.lblcerrarsesion);
             this.Controls.Add(this.btncreargrupo);
             this.Controls.Add(this.btnlistasiniciativa);
-            this.Controls.Add(this.btnregistroiniciativa);
             this.Controls.Add(this.lbleditarperfil);
             this.Name = "menu";
             this.Text = "menu";
@@ -114,12 +103,10 @@
         }
 
         #endregion
-
-        private Label lbleditarperfil;
-        private Button btnregistroiniciativa;
         private Button btnlistasiniciativa;
         private Button btncreargrupo;
         private Label lblcerrarsesion;
         public Label lblcorreo;
+        public Label lbleditarperfil;
     }
 }
