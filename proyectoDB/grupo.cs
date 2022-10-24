@@ -38,7 +38,7 @@ namespace proyectoDB
             if (mensajeError == "")
             {
                 MySqlCommand formulariocontacto = conexion.MyCon.CreateCommand();
-                formulariocontacto.CommandText = "INSERT INTO formulariocontacto(fc_nombres,fc_correo) VALUES" + "('" + txtlider.Text + "')";
+                formulariocontacto.CommandText = "INSERT INTO grupo(fk_lider) VALUES" + "('" + txtlider.Text + "')";
                 formulariocontacto.ExecuteNonQuery();
             }
             else
@@ -46,6 +46,41 @@ namespace proyectoDB
                 MessageBox.Show(mensajeError);
             }
 
+        }
+
+        private void btnmiembros_Click(object sender, EventArgs e)
+        {
+            string where = " where fk_lider like '%" + txtlider.Text + "%' ";
+            string querry = "select g_id from grupo" + where + ";";
+            MySqlCommand idgrupo = new MySqlCommand(querry, conexion.MyCon);
+            idgrupo.CommandTimeout = 60;
+            MySqlDataReader reader;
+            int idg = 0;
+            try
+            {
+                reader = idgrupo.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        idg = reader.GetInt32(0);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            try
+            {
+                MySqlCommand comentario = conexion.MyCon.CreateCommand();
+                comentario.CommandText = "insert into comentario " + "(fk_estudiante,fk_grupo) values " + "('" + txtmiembros.Text + "','" + idg + "')";
+                comentario.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 }

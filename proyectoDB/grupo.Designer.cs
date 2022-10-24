@@ -45,11 +45,12 @@
             this.btnmiembros.TabIndex = 0;
             this.btnmiembros.Text = "agregar miembros";
             this.btnmiembros.UseVisualStyleBackColor = true;
+            this.btnmiembros.Click += new System.EventHandler(this.btnmiembros_Click);
             // 
             // lblmiembros
             // 
             this.lblmiembros.AutoSize = true;
-            this.lblmiembros.Location = new System.Drawing.Point(20, 165);
+            this.lblmiembros.Location = new System.Drawing.Point(20, 174);
             this.lblmiembros.Name = "lblmiembros";
             this.lblmiembros.Size = new System.Drawing.Size(103, 15);
             this.lblmiembros.TabIndex = 1;
@@ -58,7 +59,7 @@
             // lbllider
             // 
             this.lbllider.AutoSize = true;
-            this.lbllider.Location = new System.Drawing.Point(20, 55);
+            this.lbllider.Location = new System.Drawing.Point(20, 64);
             this.lbllider.Name = "lbllider";
             this.lbllider.Size = new System.Drawing.Size(72, 15);
             this.lbllider.TabIndex = 2;
