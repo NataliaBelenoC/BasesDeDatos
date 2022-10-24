@@ -17,6 +17,8 @@ namespace proyectoDB
         public TablaIniciativas()
         {
             InitializeComponent();
+            conexion.conectar();
+            recargartabla();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -26,7 +28,16 @@ namespace proyectoDB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conexion.conectar();
+            recargartabla();
+        }
+
+        private void TablaIniciativas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recargartabla()
+        {
             string query = "SELECT fi_id, fi_nombre FROM formularioiniciativa;";
             MySqlCommand comandoDB = new MySqlCommand(query, conexion.MyCon);
 
@@ -35,7 +46,8 @@ namespace proyectoDB
             try
             {
                 reader = comandoDB.ExecuteReader();
-                if (reader.HasRows){
+                if (reader.HasRows)
+                {
                     while (reader.Read())
                     {
                         int n = dginiciativas.Rows.Add();
@@ -48,18 +60,12 @@ namespace proyectoDB
                 {
                     Console.WriteLine("No hay iniciativas");
                 }
-           
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
             }
-
-        }
-
-        private void TablaIniciativas_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
