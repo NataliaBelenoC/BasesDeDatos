@@ -67,5 +67,19 @@ namespace proyectoDB
                 Console.WriteLine(ex);
             }
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            listacomentarios listacomentarios = new listacomentarios();
+            listacomentarios.iniciativaid.Text = Convert.ToString(numericUpDown1.Value);
+            listacomentarios.iniciativaid.Visible = false;
+            listacomentarios.Show();
+        }
     }
 }
